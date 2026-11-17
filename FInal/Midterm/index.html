@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIU Student Portal - Kutaisi International University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="header-container">
+            <div class="logo">KIU Portal</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#courses">Courses</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#campus">Campus</a>
+                <a href="#register">Register</a>
+                <a href="registrations.html">Admin</a>
+            </nav>
+            <button id="dark-mode-toggle" class="dark-toggle" title="Toggle dark mode">🌙</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to KIU Student Portal</h1>
+            <p>Your gateway to academic excellence and student success at Kutaisi International University</p>
+            <a href="#register" class="cta-button">Get Started</a>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <strong id="student-count">0</strong>
+                    <span>Applicants</span>
+                </div>
+                <div class="stat-card">
+                    <strong id="date-display">Loading...</strong>
+                    <span>Today</span>
+                </div>
+                <div class="stat-card">
+                    <strong id="weather-status">Loading...</strong>
+                    <span>Weather</span>
+                </div>
+                <div class="stat-card">
+                    <strong id="semester-countdown">79</strong>
+                    <span>Days to Fall</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about fade-in">
+            <div class="about-text">
+                <h2>About KIU</h2>
+                <p>Kutaisi International University is a premier institution of higher learning committed to fostering academic excellence, innovation, and personal development. Our comprehensive student portal connects thousands of students to essential academic resources, community engagement, and career opportunities.</p>
+                <p>With state-of-the-art facilities, experienced faculty, and a supportive learning environment, KIU prepares students to become leaders in their respective fields. Our diverse student body represents over 30 countries, creating a truly global educational experience.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=500&h=350&fit=crop" alt="KIU Campus buildings and modern architecture">
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features" class="features">
+            <h2>Portal Features</h2>
+            <div class="features-grid">
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">📚</div>
+                    <h3>Course Management</h3>
+                    <p>Access all your enrolled courses, materials, and assignments in one centralized location.</p>
+                </article>
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">👥</div>
+                    <h3>Student Community</h3>
+                    <p>Connect with fellow students, join study groups, and participate in campus events and activities.</p>
+                </article>
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">📊</div>
+                    <h3>Academic Progress</h3>
+                    <p>Track your grades, GPA, and academic performance with detailed analytics and insights.</p>
+                </article>
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">💼</div>
+                    <h3>Career Services</h3>
+                    <p>Explore internship opportunities, networking events, and professional development resources.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SCHEDULE / CALENDAR TABLE -->
+        <section id="schedule" class="schedule fade-in">
+            <h2>Academic Calendar 2025-2026</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Duration</th>
+                        <th>Exam Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fall Semester</td>
+                        <td>September 15, 2025</td>
+                        <td>February 19, 2026</td>
+                        <td>5 Months</td>
+                        <td>Jan 20 – Feb 19, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Spring Semester</td>
+                        <td>March 2, 2026</td>
+                        <td>July 31, 2026</td>
+                        <td>5 Months</td>
+                        <td>June 22 – Jul 31, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Winter Break</td>
+                        <td>January 31, 2026</td>
+                        <td>March 1, 2026</td>
+                        <td>1 Month</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Summer Break</td>
+                        <td>August 1, 2026</td>
+                        <td>September 15, 2026</td>
+                        <td>6 Weeks</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- COURSES SHOWCASE -->
+        <section id="courses" class="courses">
+            <h2>Featured Programs</h2>
+            <div class="course-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="science">Science & Health</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="humanities">Humanities</button>
+            </div>
+            <div class="courses-grid">
+                <article class="course-card fade-in" data-category="science">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" alt="Computer Science">
+                    <div class="course-info">
+                        <h3>Computer Science</h3>
+                        <p>Study advanced programming, algorithms, data structures, and software development practices.</p>
+                    </div>
+                </article>
+                <article class="course-card fade-in" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop" alt="Business Administration">
+                    <div class="course-info">
+                        <h3>Business Administration</h3>
+                        <p>Develop business acumen through courses in management, finance, marketing, and entrepreneurship.</p>
+                    </div>
+                </article>
+                <article class="course-card fade-in" data-category="science">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop" alt="Medicine">
+                    <div class="course-info">
+                        <h3>Medicine</h3>
+                        <p>Prepare for a career in healthcare with strong clinical training, anatomy, and medical sciences.</p>
+                    </div>
+                </article>
+                <article class="course-card fade-in" data-category="humanities">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500&h=300&fit=crop" alt="Design">
+                    <div class="course-info">
+                        <h3>Design</h3>
+                        <p>Learn creative design, visual communication, user experience, and digital media skills.</p>
+                    </div>
+                </article>
+                <article class="course-card fade-in" data-category="humanities">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=500&h=300&fit=crop" alt="Law">
+                    <div class="course-info">
+                        <h3>Law</h3>
+                        <p>Study legal systems, human rights, public law, private law, and legal reasoning.</p>
+                    </div>
+                </article>
+                <article class="course-card fade-in" data-category="science">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop" alt="Psychology">
+                    <div class="course-info">
+                        <h3>Psychology</h3>
+                        <p>Explore human behavior, mental processes, research methods, and social psychology.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROGRAM COMPARISON TOOL -->
+        <section id="compare" class="compare-section fade-in">
+            <h2>Compare Programs</h2>
+            <div class="compare-controls">
+                <select id="compare-a">
+                    <option value="">-- Program A --</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="business">Business Administration</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="design">Design</option>
+                    <option value="law">Law</option>
+                    <option value="psychology">Psychology</option>
+                </select>
+                <span class="vs-label">vs</span>
+                <select id="compare-b">
+                    <option value="">-- Program B --</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="business">Business Administration</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="design">Design</option>
+                    <option value="law">Law</option>
+                    <option value="psychology">Psychology</option>
+                </select>
+            </div>
+            <div id="compare-result"></div>
+        </section>
+
+        <!-- CAMPUS LOCATION (IFRAME) -->
+        <section id="campus" class="campus-location fade-in">
+            <h2>Visit Our Campus</h2>
+            <div class="iframe-container">
+                <iframe
+                    src="https://www.google.com/maps?q=Kutaisi+International+University&output=embed"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- INSIGHTS -->
+        <section class="insights">
+<article class="insight-card fade-in">
+                <h3>Program Spotlight</h3>
+                <p id="program-preview">Choose a program to see how KIU supports your future.</p>
+            </article>
+            <article class="insight-card fade-in">
+                <h3>Recent Applicants</h3>
+                <ul id="recent-registrations"></ul>
+            </article>
+        </section>
+
+        <!-- REGISTRATION FORM -->
+        <section id="register" class="registration fade-in">
+            <h2>Student Registration</h2>
+            <div id="form-message" class="status-message">Fill the form to begin your KIU journey.</div>
+            <form class="form-container" method="POST" action="#" onsubmit="return false;">
+
+                <div class="form-group">
+                    <label for="firstname">First Name *</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Last Name *</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Program of Interest *</label>
+                    <select id="program" name="program" required>
+                        <option value="">-- Select a Program --</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="business">Business Administration</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="design">Design</option>
+                        <option value="law">Law</option>
+                        <option value="psychology">Psychology</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Study Level *</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="bachelor" name="study_level" value="bachelor" required>
+                            <label for="bachelor">Bachelor's</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="master" name="study_level" value="master">
+                            <label for="master">Master's</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="phd" name="study_level" value="phd">
+                            <label for="phd">PhD</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Special Interests</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="scholarship" name="interests" value="scholarship">
+                            <label for="scholarship">Scholarship Opportunities</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="housing" name="interests" value="housing">
+                            <label for="housing">Student Housing</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="clubs" name="interests" value="clubs">
+                            <label for="clubs">Student Clubs</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivation">Motivation Letter</label>
+                    <textarea id="motivation" name="motivation" placeholder="Tell us why you're interested in joining KIU..." maxlength="500"></textarea>
+                    <div class="char-counter"><span id="char-count">0</span> / 500 characters</div>
+                </div>
+
+                <input type="submit" value="Submit Registration">
+            </form>
+        </section>
+
+        <!-- ADMIN ACCESS PROMPT -->
+        <section class="admin-prompt fade-in">
+            <p>Want to view or manage all registered applicants?</p>
+            <a href="registrations.html" class="cta-button" style="background:#1a3a5c;">View Registrations (Admin)</a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h3>Kutaisi International University</h3>
+            <p>&copy; 2026 KIU Student Portal. All rights reserved.</p>
+            <p>Email: <a href="mailto:info@kiu.edu.ge">info@kiu.edu.ge</a> | Phone: +995 (0)431 21 21 21</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="Instagram">📷</a>
+                <a href="#" title="LinkedIn">in</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" class="back-to-top" title="Back to top">↑</button>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
